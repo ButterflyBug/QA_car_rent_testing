@@ -2,6 +2,7 @@ language: python
 python:
   - "3.8"
 install:
+  - sudo setup/chromedriver.sh latest
   - pip install -r requirements.txt
 script:
   - python -m flake8
